@@ -1,0 +1,1 @@
+CREATE TABLE ${hiveconf:schema}.${hiveconf:table} as select cusnum,sum(amount) as amount from retail.customer group by custnum;
